@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Mukesh Das - Business Development, Customer Support and Documentation Professional">
+
+    <meta name="author" content="Mukesh Das">
+
+    <title>
+        Mukesh Das | Business Development | Customer Support | Documentation
+    </title>
+
+
+    <style>
+
+        /* =========================================
+           GLOBAL
+        ========================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --primary: #17365d;
+            --primary-dark: #102b4a;
+            --blue: #2563eb;
+            --text: #1f2937;
+            --muted: #64748b;
+            --light: #f8fafc;
+            --white: #ffffff;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--light);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1120px;
+            margin: auto;
+        }
+
+
+        /* =========================================
+           NAVIGATION
+        ========================================= */
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: rgba(255, 255, 255, 0.97);
+
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-inner {
+            min-height: 72px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: var(--primary);
+
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .logo span {
+            color: var(--blue);
+        }
+
+        .nav-links {
+            display: flex;
+
+            align-items: center;
+
+            gap: 25px;
+
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #475569;
+
+            font-size: 14px;
+            font-weight: 600;
+
+            transition: 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--blue);
+        }
+
+
+        /* =========================================
+           HERO
+        ========================================= */
+
+        .hero {
+
+            min-height: 650px;
+
+            display: flex;
+            align-items: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #ffffff 0%,
+                    #f8fbff 60%,
+                    #eef5ff 100%
+                );
+        }
+
+        .hero-content {
+
+            max-width: 850px;
+
+            padding: 90px 0;
+        }
+
+        .availability {
+
+            display: inline-block;
+
+            background: #eff6ff;
+
+            border: 1px solid #dbeafe;
+
+            color: var(--blue);
+
+            padding: 7px 14px;
+
+            border-radius: 30px;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            letter-spacing: 0.4px;
+
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+
+            color: var(--primary);
+
+            font-size: clamp(44px, 7vw, 70px);
+
+            line-height: 1.05;
+
+            letter-spacing: -2px;
+
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+
+            color: #334155;
+
+            font-size: clamp(20px, 3vw, 29px);
+
+            font-weight: 600;
+
+            margin-bottom: 20px;
+        }
+
+        .hero-description {
+
+            color: var(--muted);
+
+            max-width: 760px;
+
+            font-size: 17px;
+
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+        }
+
+        .btn {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            min-height: 46px;
+
+            padding: 0 21px;
+
+            border-radius: 7px;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            transition: 0.2s ease;
+        }
+
+        .btn-primary {
+
+            background: var(--primary);
+
+            color: white;
+        }
+
+        .btn-primary:hover {
+
+            background: var(--primary-dark);
+
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+
+            background: white;
+
+            color: var(--primary);
+
+            border: 1px solid var(--primary);
+        }
+
+        .btn-outline:hover {
+
+            background: #f1f5f9;
+
+            transform: translateY(-2px);
+        }
+
+
+        /* =========================================
+           SECTIONS
+        ========================================= */
+
+        section {
+            padding: 85px 0;
+        }
+
+        .section-heading {
+            margin-bottom: 40px;
+        }
+
+        .section-heading small {
+
+            color: var(--blue);
+
+            font-size: 13px;
+
+            font-weight: 800;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1.5px;
+        }
+
+        .section-heading h2 {
+
+            color: var(--primary);
+
+            font-size: 34px;
+
+            margin-top: 5px;
+        }
+
+        .section-heading p {
+
+            max-width: 700px;
+
+            color: var(--muted);
+
+            margin-top: 8px;
+        }
+
+
+        /* =========================================
+           ABOUT
+        ========================================= */
+
+        .about {
+            background: white;
+        }
+
+        .about-grid {
+
+            display: grid;
+
+            grid-template-columns: 1.5fr 1fr;
+
+            gap: 55px;
+
+            align-items: start;
+        }
+
+        .about-text p {
+
+            color: #526174;
+
+            margin-bottom: 16px;
+
+            font-size: 16px;
+        }
+
+        .info-card {
+
+            background: #f8fafc;
+
+            border: 1px solid var(--border);
+
+            border-radius: 12px;
+
+            padding: 25px;
+        }
+
+        .info-row {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 15px;
+
+            padding: 12px 0;
+
+            border-bottom: 1px solid var(--border);
+        }
+
+        .info-row:last-child {
+            border-bottom: none;
+        }
+
+        .info-row strong {
+
+            color: var(--primary);
+
+            font-size: 14px;
+        }
+
+        .info-row span {
+
+            color: var(--muted);
+
+            font-size: 14px;
+
+            text-align: right;
+        }
+
+
+        /* =========================================
+           EXPERIENCE
+        ========================================= */
+
+        .experience {
+            background: var(--light);
+        }
+
+        .timeline {
+            max-width: 900px;
+        }
+
+        .job {
+
+            position: relative;
+
+            padding-left: 30px;
+
+            padding-bottom: 35px;
+
+            border-left: 2px solid #dbeafe;
+        }
+
+        .job:last-child {
+            padding-bottom: 0;
+        }
+
+        .job::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 11px;
+            height: 11px;
+
+            left: -7px;
+            top: 4px;
+
+            background: var(--blue);
+
+            border: 3px solid white;
+
+            border-radius: 50%;
+
+            box-shadow:
+                0 0 0 2px #bfdbfe;
+        }
+
+        .job-card {
+
+            background: white;
+
+            border: 1px solid var(--border);
+
+            border-radius: 10px;
+
+            padding: 26px;
+
+            box-shadow:
+                0 5px 18px rgba(15, 23, 42, 0.03);
+        }
+
+        .job-card h3 {
+
+            color: var(--primary);
+
+            font-size: 21px;
+
+            margin-bottom: 3px;
+        }
+
+        .company {
+
+            color: #334155;
+
+            font-weight: 700;
+        }
+
+        .date {
+
+            display: inline-block;
+
+            color: var(--blue);
+
+            background: #eff6ff;
+
+            padding: 5px 10px;
+
+            margin: 10px 0 16px;
+
+            border-radius: 20px;
+
+            font-size: 13px;
+
+            font-weight: 700;
+        }
+
+        .job-card ul {
+
+            padding-left: 20px;
+
+            color: #5b6878;
+        }
+
+        .job-card li {
+
+            margin-bottom: 7px;
+        }
+
+
+        /* =========================================
+           SKILLS
+        ========================================= */
+
+        .skills {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 13px;
+        }
+
+        .skill {
+
+            background: white;
+
+            border: 1px solid var(--border);
+
+            border-radius: 8px;
+
+            padding: 15px;
+
+            text-align: center;
+
+            color: #475569;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            transition: 0.2s ease;
+        }
+
+        .skill:hover {
+
+            color: var(--blue);
+
+            border-color: #93c5fd;
+
+            transform: translateY(-2px);
+        }
+
+
+        /* =========================================
+           EDUCATION
+        ========================================= */
+
+        .education {
+            background: white;
+        }
+
+        .education-card {
+
+            max-width: 800px;
+
+            background: #f8fafc;
+
+            border: 1px solid var(--border);
+
+            border-radius: 12px;
+
+            padding: 28px;
+        }
+
+        .education-card h3 {
+
+            color: var(--primary);
+
+            font-size: 22px;
+        }
+
+        .education-card p {
+
+            color: var(--muted);
+
+            margin-top: 5px;
+        }
+
+        .grade {
+
+            display: inline-block;
+
+            margin-top: 15px;
+
+            padding: 6px 12px;
+
+            background: #eaf2ff;
+
+            color: var(--primary);
+
+            border-radius: 20px;
+
+            font-size: 13px;
+
+            font-weight: 700;
+        }
+
+
+        /* =========================================
+           CONTACT
+        ========================================= */
+
+        .contact {
+            background: white;
+        }
+
+        .contact-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 15px;
+        }
+
+        .contact-card {
+
+            display: block;
+
+            background: #f8fafc;
+
+            border: 1px solid var(--border);
+
+            border-radius: 10px;
+
+            padding: 21px;
+
+            transition: 0.2s ease;
+        }
+
+        .contact-card:hover {
+
+            border-color: #93c5fd;
+
+            transform: translateY(-2px);
+        }
+
+        .contact-label {
+
+            display: block;
+
+            color: var(--primary);
+
+            font-size: 12px;
+
+            font-weight: 800;
+
+            text-transform: uppercase;
+
+            letter-spacing: 0.7px;
+
+            margin-bottom: 5px;
+        }
+
+        .contact-value {
+
+            color: #526174;
+
+            font-size: 15px;
+
+            word-break: break-word;
+        }
+
+
+        /* =========================================
+           FOOTER
+        ========================================= */
+
+        footer {
+
+            background: var(--primary);
+
+            color: white;
+
+            text-align: center;
+
+            padding: 30px 15px;
+        }
+
+        footer strong {
+            font-size: 17px;
+        }
+
+        footer p {
+
+            color: #cbd5e1;
+
+            font-size: 13px;
+
+            margin-top: 5px;
+        }
+
+
+        /* =========================================
+           TABLET
+        ========================================= */
+
+        @media (max-width: 850px) {
+
+            .nav-inner {
+
+                flex-direction: column;
+
+                padding: 15px 0;
+
+                gap: 12px;
+            }
+
+            .nav-links {
+
+                flex-wrap: wrap;
+
+                justify-content: center;
+
+                gap: 16px;
+            }
+
+            .about-grid {
+
+                grid-template-columns: 1fr;
+
+                gap: 30px;
+            }
+
+            .skills {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+        }
+
+
+        /* =========================================
+           MOBILE
+        ========================================= */
+
+        @media (max-width: 600px) {
+
+            .container {
+                width: 92%;
+            }
+
+            section {
+                padding: 65px 0;
+            }
+
+            .hero {
+                min-height: auto;
+            }
+
+            .hero-content {
+                padding: 70px 0;
+            }
+
+            .hero h1 {
+                letter-spacing: -1px;
+            }
+
+            .hero-description {
+                font-size: 16px;
+            }
+
+            .nav-links {
+                gap: 13px;
+            }
+
+            .nav-links a {
+                font-size: 12px;
+            }
+
+            .skills {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .job {
+                padding-left: 22px;
+            }
+
+            .job-card {
+                padding: 20px;
+            }
+        }
+
+
+        /* =========================================
+           SMALL MOBILE
+        ========================================= */
+
+        @media (max-width: 400px) {
+
+            .skills {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .info-row {
+
+                flex-direction: column;
+
+                gap: 2px;
+            }
+
+            .info-row span {
+                text-align: left;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         NAVIGATION
+    ========================================== -->
+
+    <header class="navbar">
+
+        <div class="container nav-inner">
+
+            <a href="#home" class="logo">
+                Mukesh<span>.</span>
+            </a>
+
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#home">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#experience">
+                        Experience
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#skills">
+                        Skills
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#education">
+                        Education
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         HERO
+    ========================================== -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="container">
+
+                <div class="hero-content">
+
+
+                    <span class="availability">
+
+                        AVAILABLE FOR UAE OPPORTUNITIES
+
+                    </span>
+
+
+                    <h1>
+
+                        Mukesh Das
+
+                    </h1>
+
+
+                    <h2>
+
+                        Business Development |
+                        Customer Support |
+                        Documentation
+
+                    </h2>
+
+
+                    <p class="hero-description">
+
+                        Customer-focused and technically skilled professional
+                        with experience in business support, customer service,
+                        technical support, computer operations, data entry,
+                        documentation, and graphic design.
+
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+
+                        <!-- DOWNLOAD CV -->
+
+                        <a
+                            href="Mukes_cv.pdf"
+                            download="Mukes_cv.pdf"
+                            class="btn btn-primary">
+
+                            Download CV
+
+                        </a>
+
+
+                        <!-- CONTACT -->
+
+                        <a
+                            href="#contact"
+                            class="btn btn-outline">
+
+                            Contact Me
+
+                        </a>
+
+
+                        <!-- LINKEDIN -->
+
+                        <a
+                            href="https://www.linkedin.com/in/mukesh-das-0031a1417/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-outline">
+
+                            LinkedIn
+
+                        </a>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             ABOUT
+        ========================================== -->
+
+        <section class="about" id="about">
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <small>
+                        About Me
+                    </small>
+
+                    <h2>
+                        Professional Profile
+                    </h2>
+
+                </div>
+
+
+                <div class="about-grid">
+
+
+                    <div class="about-text">
+
+                        <p>
+
+                            I am Mukesh Das, a Diploma holder in Computer
+                            Science Engineering from Janakpur University.
+                            I have professional experience in business support,
+                            customer service, technical support, computer
+                            operations, data entry, documentation, and
+                            graphic design.
+
+                        </p>
+
+
+                        <p>
+
+                            I am a quick learner with strong communication,
+                            teamwork, problem-solving, customer-service,
+                            documentation, and computer skills. I am interested
+                            in suitable opportunities where I can contribute
+                            to a professional organization and continue
+                            developing my career.
+
+                        </p>
+
+
+                        <p>
+
+                            I am currently based in Kathmandu, Nepal and
+                            open to professional opportunities in the UAE.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+
+                        <div class="info-row">
+
+                            <strong>
+                                Location
+                            </strong>
+
+                            <span>
+                                Kathmandu, Nepal
+                            </span>
+
+                        </div>
+
+
+                        <div class="info-row">
+
+                            <strong>
+                                Nationality
+                            </strong>
+
+                            <span>
+                                Nepali
+                            </span>
+
+                        </div>
+
+
+                        <div class="info-row">
+
+                            <strong>
+                                Education
+                            </strong>
+
+                            <span>
+                                Diploma in Computer Science Engineering
+                            </span>
+
+                        </div>
+
+
+                        <div class="info-row">
+
+                            <strong>
+                                Availability
+                            </strong>
+
+                            <span>
+                                UAE Opportunities
+                            </span>
+
+                        </div>
+
+
+                        <div class="info-row">
+
+                            <strong>
+                                Work Preference
+                            </strong>
+
+                            <span>
+                                Full-time
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             EXPERIENCE
+        ========================================== -->
+
+        <section class="experience" id="experience">
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <small>
+                        Career
+                    </small>
+
+                    <h2>
+                        Professional Experience
+                    </h2>
+
+                </div>
+
+
+                <div class="timeline">
+
+
+                    <!-- JOB 1 -->
+
+                    <div class="job">
+
+                        <div class="job-card">
+
+
+                            <h3>
+                                Business cum Support Executive
+                            </h3>
+
+
+                            <div class="company">
+
+                                Dynamic Technosoft
+                                — Janakpur, Nepal
+
+                            </div>
+
+
+                            <span class="date">
+
+                                Feb 2026 – May 2026
+
+                            </span>
+
+
+                            <ul>
+
+                                <li>
+                                    Supported business operations,
+                                    customer service, and day-to-day
+                                    administrative activities.
+                                </li>
+
+                                <li>
+                                    Communicated with clients to understand
+                                    requirements and provide appropriate
+                                    product and service support.
+                                </li>
+
+                                <li>
+                                    Assisted customers and users with
+                                    technical and software-related queries.
+                                </li>
+
+                                <li>
+                                    Supported client relationship management,
+                                    follow-ups, and professional communication.
+                                </li>
+
+                                <li>
+                                    Assisted with software troubleshooting
+                                    and basic technical support.
+                                </li>
+
+                                <li>
+                                    Prepared and maintained business records,
+                                    customer information, and documentation.
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- JOB 2 -->
+
+                    <div class="job">
+
+                        <div class="job-card">
+
+
+                            <h3>
+                                Computer Operator cum Graphic Designer
+                            </h3>
+
+
+                            <div class="company">
+
+                                PR Training Center
+                                — Janakpur, Nepal
+
+                            </div>
+
+
+                            <span class="date">
+
+                                Feb 2022 – Sep 2025
+
+                            </span>
+
+
+                            <ul>
+
+                                <li>
+                                    Managed daily computer operations,
+                                    data entry, documentation, and
+                                    office-related tasks.
+                                </li>
+
+                                <li>
+                                    Prepared and maintained documents
+                                    using Microsoft Office applications.
+                                </li>
+
+                                <li>
+                                    Used Microsoft Excel for data entry,
+                                    records, and administrative reporting.
+                                </li>
+
+                                <li>
+                                    Created and edited graphics and
+                                    promotional materials using Adobe
+                                    Photoshop.
+                                </li>
+
+                                <li>
+                                    Assisted with printing, scanning,
+                                    document formatting, and digital
+                                    file management.
+                                </li>
+
+                                <li>
+                                    Provided basic computer and technical
+                                    support to users.
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             SKILLS
+        ========================================== -->
+
+        <section id="skills">
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <small>
+                        Expertise
+                    </small>
+
+                    <h2>
+                        Skills & Technologies
+                    </h2>
+
+                </div>
+
+
+                <div class="skills">
+
+
+                    <div class="skill">
+                        Business Support
+                    </div>
+
+                    <div class="skill">
+                        Customer Support
+                    </div>
+
+                    <div class="skill">
+                        Documentation
+                    </div>
+
+                    <div class="skill">
+                        Customer Service
+                    </div>
+
+
+                    <div class="skill">
+                        Technical Support
+                    </div>
+
+                    <div class="skill">
+                        Client Relationship
+                    </div>
+
+                    <div class="skill">
+                        Microsoft Office
+                    </div>
+
+                    <div class="skill">
+                        Microsoft Excel
+                    </div>
+
+
+                    <div class="skill">
+                        Data Entry
+                    </div>
+
+                    <div class="skill">
+                        ERP / CRM
+                    </div>
+
+                    <div class="skill">
+                        TallyPrime
+                    </div>
+
+                    <div class="skill">
+                        Software Troubleshooting
+                    </div>
+
+
+                    <div class="skill">
+                        Adobe Photoshop
+                    </div>
+
+                    <div class="skill">
+                        Adobe Illustrator
+                    </div>
+
+                    <div class="skill">
+                        Google Workspace
+                    </div>
+
+                    <div class="skill">
+                        HTML
+                    </div>
+
+
+                    <div class="skill">
+                        JavaScript
+                    </div>
+
+                    <div class="skill">
+                        PHP
+                    </div>
+
+                    <div class="skill">
+                        Problem Solving
+                    </div>
+
+                    <div class="skill">
+                        Teamwork
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             EDUCATION
+        ========================================== -->
+
+        <section class="education" id="education">
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <small>
+                        Education
+                    </small>
+
+                    <h2>
+                        Academic Background
+                    </h2>
+
+                </div>
+
+
+                <div class="education-card">
+
+
+                    <h3>
+                        Diploma in Computer Science Engineering
+                    </h3>
+
+
+                    <p>
+                        Janakpur University
+                    </p>
+
+
+                    <span class="grade">
+                        First Division
+                    </span>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             CONTACT
+        ========================================== -->
+
+        <section class="contact" id="contact">
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <small>
+                        Get In Touch
+                    </small>
+
+                    <h2>
+                        Contact Me
+                    </h2>
+
+
+                    <p>
+
+                        I am open to suitable UAE opportunities in
+                        business support, customer support, documentation,
+                        and related professional roles.
+
+                    </p>
+
+                </div>
+
+
+                <div class="contact-grid">
+
+
+                    <!-- EMAIL -->
+
+                    <a
+                        href="mailto:mukeshdasof@gmail.com"
+                        class="contact-card">
+
+                        <span class="contact-label">
+                            Email
+                        </span>
+
+                        <span class="contact-value">
+                            mukeshdasof@gmail.com
+                        </span>
+
+                    </a>
+
+
+                    <!-- PHONE -->
+
+                    <a
+                        href="tel:+9779713623064"
+                        class="contact-card">
+
+                        <span class="contact-label">
+                            Phone
+                        </span>
+
+                        <span class="contact-value">
+                            +977-9713623064
+                        </span>
+
+                    </a>
+
+
+                    <!-- LINKEDIN -->
+
+                    <a
+                        href="https://www.linkedin.com/in/mukesh-das-0031a1417/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-card">
+
+                        <span class="contact-label">
+                            LinkedIn
+                        </span>
+
+                        <span class="contact-value">
+                            linkedin.com/in/mukesh-das-0031a1417
+                        </span>
+
+                    </a>
+
+
+                    <!-- LOCATION -->
+
+                    <div class="contact-card">
+
+                        <span class="contact-label">
+                            Location
+                        </span>
+
+                        <span class="contact-value">
+                            Kathmandu, Nepal
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+        <strong>
+            Mukesh Das
+        </strong>
+
+
+        <p>
+            Business Development |
+            Customer Support |
+            Documentation
+        </p>
+
+
+        <p>
+            © 2026 Mukesh Das. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
